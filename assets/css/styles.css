@@ -1,15 +1,15 @@
 *, *::before, *::after {
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
-}
-
-:root {
+  }
+  
+  :root {
     --unpicked-answer-color: rgb(221, 219, 219);
     --correct-answer-color: rgba(0, 255, 0, 0.507);
     --wrong-answer-color: rgba(255, 0, 0, 0.479);
-}
-
-body {
+  }
+  
+  body {
     background-color: rgb(97, 174, 197);
     padding: 0;
     margin: 0;
@@ -18,42 +18,32 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-
-}
-
-button.answer {
-    background-color: var(--unpicked-answer-color);
-    
-}
-button.wrong {
-    background-color: var(--wrong-answer-color);
-}
-button.correct {
-    background-color: var(--correct-answer-color);
-}
-
-.container {
+  }
+  
+  .container {
     width: 800px;
     max-width: 80%;
     background-color: gainsboro;
     border-radius: 5px;
-    padding: 10px;
+    padding: 20px;
+    text-align: center;
     box-shadow: 0 0 10px 2px;
-}
-
-.btn-grid {
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .btn-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 10px;
-    margin: 20px 0;
-}
-
-.controls {
-    align-items: flex-end;
-}
-
-.btn{
-    font-size: larger;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  .btn {
+    font-size: 16px;
     font-weight: bold;
     background-color: var(--unpicked-answer-color);
     border: 2px solid rgb(70, 99, 116);
@@ -61,38 +51,71 @@ button.correct {
     padding: 15px 20px;
     color: rgb(0, 0, 0);
     outline: none;
-}
-
-.btn:hover {
+    cursor: pointer;
+  }
+  
+  .btn:hover {
     border-color: rgb(2, 2, 2);
-}
-
-.btn.correct {
+  }
+  
+  .btn.correct {
     background-color: var(--correct-answer-color);
-}
-
-.btn.wrong {
+  }
+  
+  .btn.wrong {
     background-color: var(--wrong-answer-color);
-}
-
-.controls { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.start-btn {
-    font-size: large;
+  }
+  
+  .start-btn {
+    font-size: 24px;
     font-weight: bold;
     padding: 10px 20px;
-}
-
-.next-btn {
-    font-size: large;
+  }
+  
+  #timer {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  #initials-form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  #initials-form input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #initials-form button {
+    margin-top: 10px;
+    font-size: 16px;
     font-weight: bold;
     padding: 10px 20px;
-}
-
-.hide {
-    display: none;
-}
+    border-radius: 5px;
+    background-color: var(--unpicked-answer-color);
+    border: 2px solid rgb(70, 99, 116);
+    color: rgb(0, 0, 0);
+    outline: none;
+    cursor: pointer;
+  }
+  
+  #initials-form button:hover {
+    border-color: rgb(2, 2, 2);
+  }
+  
+  #initials-form button.correct {
+    background-color: var(--correct-answer-color);
+  }
+  
+  #initials-form button.wrong {
+    background-color: var(--wrong-answer-color);
+  }
+  
