@@ -148,21 +148,30 @@ function saveScore(initials, score) {
 // Quiz questions
 const questions = [
   {
-    question: 'What is 2 + 2?',
+    question: 'What is the way you refer to a class in CSS??',
     answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false },
-      { text: '0', correct: false },
-      { text: '7', correct: false },
+      { text: '.class', correct: true },
+      { text: '#class', correct: false },
+      { text: '_class', correct: false },
+      { text: 'Class', correct: false },
     ],
   },
   {
-    question: 'What is a prime number?',
+    question: 'how do you refer to an id in CSS?',
     answers: [
-      { text: '1', correct: false },
-      { text: '2', correct: true },
-      { text: '4', correct: false },
-      { text: '0', correct: false },
+      { text: '.id', correct: false },
+      { text: '#id', correct: true },
+      { text: '_id', correct: false },
+      { text: 'ID', correct: false },
+    ],
+  },
+  {
+    question: 'what language controls the layout of a page?',
+    answers: [
+      { text: 'CSS', correct: false },
+      { text: 'HTML', correct: true },
+      { text: 'Javascript', correct: false },
+      { text: 'Python', correct: false },
     ],
   },
   {
@@ -172,6 +181,33 @@ const questions = [
       { text: '4', correct: true },
       { text: '1/2', correct: false },
       { text: '.03', correct: false },
+    ],
+  },
+  {
+    question: 'Which of the follow is a string?',
+    answers: [
+      { text: '4', correct: false },
+      { text: '2+2', correct: false },
+      { text: '4.0', correct: false },
+      { text: 'four', correct: true }
+    ],
+  },
+  {
+    question: 'which is an example of a Javascript Method?',
+    answers: [
+      { text: 'getElementById', correct: true },
+      { text: 'function()', correct: false },
+      { text: 'true', correct: false },
+      { text: 'x > 3', correct: false }
+    ],
+  },
+  {
+    question: 'what is the typical name for a CSS stylesheet?',
+    answers: [
+      { text: 'index.css', correct: false },
+      { text: 'style.css', correct: true },
+      { text: 'script.css', correct: false },
+      { text: 'css.h', correct: false },
     ],
   },
 ];
